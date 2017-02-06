@@ -11,7 +11,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170206031249) do
+ActiveRecord::Schema.define(version: 20170206032150) do
+
+  create_table "carousings", force: :cascade do |t|
+    t.integer  "dice_roll"
+    t.text     "result"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "dugeons", force: :cascade do |t|
+    t.string   "monster"
+    t.integer  "quantity"
+    t.string   "difficulty"
+    t.string   "special_ability"
+    t.string   "loot"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
 
   create_table "encounters", force: :cascade do |t|
     t.string   "tempermant"
@@ -33,6 +50,15 @@ ActiveRecord::Schema.define(version: 20170206031249) do
     t.string   "dislikes"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
+  end
+
+  create_table "quests", force: :cascade do |t|
+    t.string   "difficulty"
+    t.string   "items_required"
+    t.text     "quest"
+    t.text     "details"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
   end
 
   create_table "welcomes", force: :cascade do |t|

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Monster:</strong>
+  <%= @dugeon.monster %>
+</p>
+
+<p>
+  <strong>Quantity:</strong>
+  <%= @dugeon.quantity %>
+</p>
+
+<p>
+  <strong>Difficulty:</strong>
+  <%= @dugeon.difficulty %>
+</p>
+
+<p>
+  <strong>Special ability:</strong>
+  <%= @dugeon.special_ability %>
+</p>
+
+<p>
+  <strong>Loot:</strong>
+  <%= @dugeon.loot %>
+</p>
+
+<%= link_to 'Edit', edit_dugeon_path(@dugeon) %> |
+<%= link_to 'Back', dugeons_path %>

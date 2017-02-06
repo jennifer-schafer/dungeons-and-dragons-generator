@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :quests
+  resources :carousings
+  resources :dugeons
   resources :welcomes
     root 'welcomes#index'
   resources :encounters

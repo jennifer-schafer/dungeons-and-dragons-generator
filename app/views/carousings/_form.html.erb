@@ -1,0 +1,25 @@
+<%= form_for(@carousing) do |f| %>
+  <% if @carousing.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@carousing.errors.count, "error") %> prohibited this carousing from being saved:</h2>
+
+      <ul>
+      <% @carousing.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :dice_roll %><br>
+    <%= f.number_field :dice_roll %>
+  </div>
+  <div class="field">
+    <%= f.label :result %><br>
+    <%= f.text_area :result %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

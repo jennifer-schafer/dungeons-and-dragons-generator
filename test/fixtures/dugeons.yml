@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  monster: MyString
+  quantity: 1
+  difficulty: MyString
+  special_ability: MyString
+  loot: MyString
+
+two:
+  monster: MyString
+  quantity: 1
+  difficulty: MyString
+  special_ability: MyString
+  loot: MyString

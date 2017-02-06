@@ -1,0 +1,1 @@
+json.array! @carousings, partial: 'carousings/carousing', as: :carousing

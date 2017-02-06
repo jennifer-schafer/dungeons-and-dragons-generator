@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Dugeons</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Monster</th>
+      <th>Quantity</th>
+      <th>Difficulty</th>
+      <th>Special ability</th>
+      <th>Loot</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @dugeons.each do |dugeon| %>
+      <tr>
+        <td><%= dugeon.monster %></td>
+        <td><%= dugeon.quantity %></td>
+        <td><%= dugeon.difficulty %></td>
+        <td><%= dugeon.special_ability %></td>
+        <td><%= dugeon.loot %></td>
+        <td><%= link_to 'Show', dugeon %></td>
+        <td><%= link_to 'Edit', edit_dugeon_path(dugeon) %></td>
+        <td><%= link_to 'Destroy', dugeon, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Dugeon', new_dugeon_path %>

@@ -1,0 +1,1 @@
+json.partial! "dugeons/dugeon", dugeon: @dugeon

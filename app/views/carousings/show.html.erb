@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Dice roll:</strong>
+  <%= @carousing.dice_roll %>
+</p>
+
+<p>
+  <strong>Result:</strong>
+  <%= @carousing.result %>
+</p>
+
+<%= link_to 'Edit', edit_carousing_path(@carousing) %> |
+<%= link_to 'Back', carousings_path %>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  difficulty: MyString
+  items_required: MyString
+  quest: MyText
+  details: MyText
+
+two:
+  difficulty: MyString
+  items_required: MyString
+  quest: MyText
+  details: MyText

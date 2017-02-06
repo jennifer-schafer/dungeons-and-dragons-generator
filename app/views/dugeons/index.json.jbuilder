@@ -1,0 +1,1 @@
+json.array! @dugeons, partial: 'dugeons/dugeon', as: :dugeon

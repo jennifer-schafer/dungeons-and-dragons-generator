@@ -1,0 +1,1 @@
+json.partial! "carousings/carousing", carousing: @carousing
