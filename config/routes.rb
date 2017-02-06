@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
   root 'welcomes#index'
+  resources :welcomes
   resources :quests
   resources :carousings
   resources :dugeons
-  resources :welcomes
   resources :encounters
   resources :people
   # The priority is based upon order of creation: first created -> highest priority.
