@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
   root 'people#index'
-  resources :welcomes
-  resources :quests
-  resources :carousings
-  resources :dugeons
-  resources :encounters
-  resources :people
+  resources :welcomes, path: ''
+  resources :quests, path: ''
+  resources :carousings, path: ''
+  resources :dugeons, path: ''
+  resources :encounters, path: ''
+  resources :people, path: ''
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
