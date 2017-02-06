@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  race: MyString
+  character_class: MyString
+  personality: MyString
+  alignment: MyString
+  likes: MyString
+  dislikes: MyString
+
+two:
+  name: MyString
+  race: MyString
+  character_class: MyString
+  personality: MyString
+  alignment: MyString
+  likes: MyString
+  dislikes: MyString

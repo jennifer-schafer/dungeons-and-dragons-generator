@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @person.name %>
+</p>
+
+<p>
+  <strong>Race:</strong>
+  <%= @person.race %>
+</p>
+
+<p>
+  <strong>Character class:</strong>
+  <%= @person.character_class %>
+</p>
+
+<p>
+  <strong>Personality:</strong>
+  <%= @person.personality %>
+</p>
+
+<p>
+  <strong>Alignment:</strong>
+  <%= @person.alignment %>
+</p>
+
+<p>
+  <strong>Likes:</strong>
+  <%= @person.likes %>
+</p>
+
+<p>
+  <strong>Dislikes:</strong>
+  <%= @person.dislikes %>
+</p>
+
+<%= link_to 'Edit', edit_person_path(@person) %> |
+<%= link_to 'Back', people_path %>
