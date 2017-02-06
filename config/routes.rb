@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'people#index'
+  #root 'people#index'
   resources :welcomes
   resources :quests
   resources :carousings
