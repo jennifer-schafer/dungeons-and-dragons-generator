@@ -1,0 +1,37 @@
+<%= form_for(@encounter) do |f| %>
+  <% if @encounter.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@encounter.errors.count, "error") %> prohibited this encounter from being saved:</h2>
+
+      <ul>
+      <% @encounter.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :tempermant %><br>
+    <%= f.text_field :tempermant %>
+  </div>
+  <div class="field">
+    <%= f.label :quantity %><br>
+    <%= f.number_field :quantity %>
+  </div>
+  <div class="field">
+    <%= f.label :race %><br>
+    <%= f.text_field :race %>
+  </div>
+  <div class="field">
+    <%= f.label :difficulty %><br>
+    <%= f.text_field :difficulty %>
+  </div>
+  <div class="field">
+    <%= f.label :background %><br>
+    <%= f.text_area :background %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

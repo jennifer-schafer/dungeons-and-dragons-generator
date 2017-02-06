@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Tempermant:</strong>
+  <%= @encounter.tempermant %>
+</p>
+
+<p>
+  <strong>Quantity:</strong>
+  <%= @encounter.quantity %>
+</p>
+
+<p>
+  <strong>Race:</strong>
+  <%= @encounter.race %>
+</p>
+
+<p>
+  <strong>Difficulty:</strong>
+  <%= @encounter.difficulty %>
+</p>
+
+<p>
+  <strong>Background:</strong>
+  <%= @encounter.background %>
+</p>
+
+<%= link_to 'Edit', edit_encounter_path(@encounter) %> |
+<%= link_to 'Back', encounters_path %>

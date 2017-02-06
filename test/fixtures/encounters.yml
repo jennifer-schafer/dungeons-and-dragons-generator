@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tempermant: MyString
+  quantity: 1
+  race: MyString
+  difficulty: MyString
+  background: MyText
+
+two:
+  tempermant: MyString
+  quantity: 1
+  race: MyString
+  difficulty: MyString
+  background: MyText
