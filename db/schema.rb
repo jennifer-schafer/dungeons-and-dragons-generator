@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170206030104) do
+ActiveRecord::Schema.define(version: 20170206031249) do
 
   create_table "encounters", force: :cascade do |t|
     t.string   "tempermant"
@@ -33,6 +33,11 @@ ActiveRecord::Schema.define(version: 20170206030104) do
     t.string   "dislikes"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
+  end
+
+  create_table "welcomes", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
