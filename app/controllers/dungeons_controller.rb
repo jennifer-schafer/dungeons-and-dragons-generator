@@ -4,7 +4,7 @@ class DungeonsController < ApplicationController
   # GET /dungeons
   # GET /dungeons.json
   def index
-    @dungeons = dungeon.all
+    @dungeons = Dungeon.all
   end
 
   # GET /dungeons/1
@@ -14,7 +14,7 @@ class DungeonsController < ApplicationController
 
   # GET /dungeons/new
   def new
-    @dungeon = dungeon.new
+    @dungeon = Dungeon.new
   end
 
   # GET /dungeons/1/edit
@@ -24,7 +24,7 @@ class DungeonsController < ApplicationController
   # POST /dungeons
   # POST /dungeons.json
   def create
-    @dungeon = dungeon.new(dungeon_params)
+    @dungeon = Dungeon.new(dungeon_params)
 
     respond_to do |format|
       if @dungeon.save
@@ -64,7 +64,7 @@ class DungeonsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_dungeon
-      @dungeon = dungeon.find(params[:id])
+      @dungeon = Dungeon.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
