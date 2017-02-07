@@ -1,10 +1,10 @@
-<%= form_for(@dugeon) do |f| %>
-  <% if @dugeon.errors.any? %>
+<%= form_for(@dungeon) do |f| %>
+  <% if @dungeon.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@dugeon.errors.count, "error") %> prohibited this dugeon from being saved:</h2>
+      <h2><%= pluralize(@dungeon.errors.count, "error") %> prohibited this dungeon from being saved:</h2>
 
       <ul>
-      <% @dugeon.errors.full_messages.each do |message| %>
+      <% @dungeon.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
       </ul>

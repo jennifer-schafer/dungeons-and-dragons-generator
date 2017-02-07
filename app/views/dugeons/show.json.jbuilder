@@ -1,1 +1,1 @@
-json.partial! "dugeons/dugeon", dugeon: @dugeon
+json.partial! "dungeons/dungeon", dungeon: @dungeon

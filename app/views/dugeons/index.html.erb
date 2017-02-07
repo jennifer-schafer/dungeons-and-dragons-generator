@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Dugeons</h1>
+<h1>Listing dungeons</h1>
 
 <table>
   <thead>
@@ -15,16 +15,16 @@
   </thead>
 
   <tbody>
-    <% @dugeons.each do |dugeon| %>
+    <% @dungeons.each do |dungeon| %>
       <tr>
-        <td><%= dugeon.monster %></td>
-        <td><%= dugeon.quantity %></td>
-        <td><%= dugeon.difficulty %></td>
-        <td><%= dugeon.special_ability %></td>
-        <td><%= dugeon.loot %></td>
-        <td><%= link_to 'Show', dugeon %></td>
-        <td><%= link_to 'Edit', edit_dugeon_path(dugeon) %></td>
-        <td><%= link_to 'Destroy', dugeon, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= dungeon.monster %></td>
+        <td><%= dungeon.quantity %></td>
+        <td><%= dungeon.difficulty %></td>
+        <td><%= dungeon.special_ability %></td>
+        <td><%= dungeon.loot %></td>
+        <td><%= link_to 'Show', dungeon %></td>
+        <td><%= link_to 'Edit', edit_dungeon_path(dungeon) %></td>
+        <td><%= link_to 'Destroy', dungeon, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -32,4 +32,4 @@
 
 <br>
 
-<%= link_to 'New Dugeon', new_dugeon_path %>
+<%= link_to 'New dungeon', new_dungeon_path %>

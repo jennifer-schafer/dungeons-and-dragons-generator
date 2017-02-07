@@ -1,1 +1,1 @@
-json.array! @dugeons, partial: 'dugeons/dugeon', as: :dugeon
+json.array! @dungeons, partial: 'dungeons/dungeon', as: :dungeon

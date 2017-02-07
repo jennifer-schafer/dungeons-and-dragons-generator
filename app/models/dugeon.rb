@@ -1,2 +1,2 @@
-class Dugeon < ActiveRecord::Base
+class dungeon < ActiveRecord::Base
 end

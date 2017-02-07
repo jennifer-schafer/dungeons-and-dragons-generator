@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 20170206032150) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "dugeons", force: :cascade do |t|
+  create_table "dungeons", force: :cascade do |t|
     t.string   "monster"
     t.integer  "quantity"
     t.string   "difficulty"

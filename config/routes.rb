@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :welcomes
   resources :quests
   resources :carousings
-  resources :dugeons
+  resources :dungeons
   resources :encounters
   resources :people
 

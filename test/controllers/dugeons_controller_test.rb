@@ -1,14 +1,14 @@
 require 'test_helper'
 
-class DugeonsControllerTest < ActionController::TestCase
+class dungeonsControllerTest < ActionController::TestCase
   setup do
-    @dugeon = dugeons(:one)
+    @dungeon = dungeons(:one)
   end
 
   test "should get index" do
     get :index
     assert_response :success
-    assert_not_nil assigns(:dugeons)
+    assert_not_nil assigns(:dungeons)
   end
 
   test "should get new" do
@@ -16,34 +16,34 @@ class DugeonsControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should create dugeon" do
-    assert_difference('Dugeon.count') do
-      post :create, dugeon: { difficulty: @dugeon.difficulty, loot: @dugeon.loot, monster: @dugeon.monster, quantity: @dugeon.quantity, special_ability: @dugeon.special_ability }
+  test "should create dungeon" do
+    assert_difference('dungeon.count') do
+      post :create, dungeon: { difficulty: @dungeon.difficulty, loot: @dungeon.loot, monster: @dungeon.monster, quantity: @dungeon.quantity, special_ability: @dungeon.special_ability }
     end
 
-    assert_redirected_to dugeon_path(assigns(:dugeon))
+    assert_redirected_to dungeon_path(assigns(:dungeon))
   end
 
-  test "should show dugeon" do
-    get :show, id: @dugeon
+  test "should show dungeon" do
+    get :show, id: @dungeon
     assert_response :success
   end
 
   test "should get edit" do
-    get :edit, id: @dugeon
+    get :edit, id: @dungeon
     assert_response :success
   end
 
-  test "should update dugeon" do
-    patch :update, id: @dugeon, dugeon: { difficulty: @dugeon.difficulty, loot: @dugeon.loot, monster: @dugeon.monster, quantity: @dugeon.quantity, special_ability: @dugeon.special_ability }
-    assert_redirected_to dugeon_path(assigns(:dugeon))
+  test "should update dungeon" do
+    patch :update, id: @dungeon, dungeon: { difficulty: @dungeon.difficulty, loot: @dungeon.loot, monster: @dungeon.monster, quantity: @dungeon.quantity, special_ability: @dungeon.special_ability }
+    assert_redirected_to dungeon_path(assigns(:dungeon))
   end
 
-  test "should destroy dugeon" do
-    assert_difference('Dugeon.count', -1) do
-      delete :destroy, id: @dugeon
+  test "should destroy dungeon" do
+    assert_difference('dungeon.count', -1) do
+      delete :destroy, id: @dungeon
     end
 
-    assert_redirected_to dugeons_path
+    assert_redirected_to dungeons_path
   end
 end

@@ -1,74 +1,74 @@
-class DugeonsController < ApplicationController
-  before_action :set_dugeon, only: [:show, :edit, :update, :destroy]
+class dungeonsController < ApplicationController
+  before_action :set_dungeon, only: [:show, :edit, :update, :destroy]
 
-  # GET /dugeons
-  # GET /dugeons.json
+  # GET /dungeons
+  # GET /dungeons.json
   def index
-    @dugeons = Dugeon.all
+    @dungeons = dungeon.all
   end
 
-  # GET /dugeons/1
-  # GET /dugeons/1.json
+  # GET /dungeons/1
+  # GET /dungeons/1.json
   def show
   end
 
-  # GET /dugeons/new
+  # GET /dungeons/new
   def new
-    @dugeon = Dugeon.new
+    @dungeon = dungeon.new
   end
 
-  # GET /dugeons/1/edit
+  # GET /dungeons/1/edit
   def edit
   end
 
-  # POST /dugeons
-  # POST /dugeons.json
+  # POST /dungeons
+  # POST /dungeons.json
   def create
-    @dugeon = Dugeon.new(dugeon_params)
+    @dungeon = dungeon.new(dungeon_params)
 
     respond_to do |format|
-      if @dugeon.save
-        format.html { redirect_to @dugeon, notice: 'Dugeon was successfully created.' }
-        format.json { render :show, status: :created, location: @dugeon }
+      if @dungeon.save
+        format.html { redirect_to @dungeon, notice: 'dungeon was successfully created.' }
+        format.json { render :show, status: :created, location: @dungeon }
       else
         format.html { render :new }
-        format.json { render json: @dugeon.errors, status: :unprocessable_entity }
+        format.json { render json: @dungeon.errors, status: :unprocessable_entity }
       end
     end
   end
 
-  # PATCH/PUT /dugeons/1
-  # PATCH/PUT /dugeons/1.json
+  # PATCH/PUT /dungeons/1
+  # PATCH/PUT /dungeons/1.json
   def update
     respond_to do |format|
-      if @dugeon.update(dugeon_params)
-        format.html { redirect_to @dugeon, notice: 'Dugeon was successfully updated.' }
-        format.json { render :show, status: :ok, location: @dugeon }
+      if @dungeon.update(dungeon_params)
+        format.html { redirect_to @dungeon, notice: 'dungeon was successfully updated.' }
+        format.json { render :show, status: :ok, location: @dungeon }
       else
         format.html { render :edit }
-        format.json { render json: @dugeon.errors, status: :unprocessable_entity }
+        format.json { render json: @dungeon.errors, status: :unprocessable_entity }
       end
     end
   end
 
-  # DELETE /dugeons/1
-  # DELETE /dugeons/1.json
+  # DELETE /dungeons/1
+  # DELETE /dungeons/1.json
   def destroy
-    @dugeon.destroy
+    @dungeon.destroy
     respond_to do |format|
-      format.html { redirect_to dugeons_url, notice: 'Dugeon was successfully destroyed.' }
+      format.html { redirect_to dungeons_url, notice: 'dungeon was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    def set_dugeon
-      @dugeon = Dugeon.find(params[:id])
+    def set_dungeon
+      @dungeon = dungeon.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
-    def dugeon_params
-      params.require(:dugeon).permit(:monster, :quantity, :difficulty, :special_ability, :loot)
+    def dungeon_params
+      params.require(:dungeon).permit(:monster, :quantity, :difficulty, :special_ability, :loot)
     end
 end
