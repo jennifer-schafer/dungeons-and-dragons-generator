@@ -1,7 +1,7 @@
 class CreateDungeons < ActiveRecord::Migration
 
   def change
-    create_table :dugeons do |t|
+    create_table :dungeons do |t|
       t.string :monster
       t.integer :quantity
       t.string :difficulty
