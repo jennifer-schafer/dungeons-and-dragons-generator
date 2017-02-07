@@ -1,2 +1,2 @@
-class dungeon < ActiveRecord::Base
+class Dungeon < ActiveRecord::Base
 end

@@ -1,4 +1,4 @@
-class Createdungeons < ActiveRecord::Migration
+class CreateDungeons < ActiveRecord::Migration
   def change
     create_table :dungeons do |t|
       t.string :monster

@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class dungeonsControllerTest < ActionController::TestCase
+class DungeonsControllerTest < ActionController::TestCase
   setup do
     @dungeon = dungeons(:one)
   end

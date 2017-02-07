@@ -1,4 +1,4 @@
-class dungeonsController < ApplicationController
+class DungeonsController < ApplicationController
   before_action :set_dungeon, only: [:show, :edit, :update, :destroy]
 
   # GET /dungeons

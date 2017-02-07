@@ -1,2 +1,2 @@
-module dungeonsHelper
+module DungeonsHelper
 end

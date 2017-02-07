@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class dungeonTest < ActiveSupport::TestCase
+class DungeonTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
