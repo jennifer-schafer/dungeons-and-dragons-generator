@@ -61,6 +61,10 @@ class QuestsController < ApplicationController
     end
   end
 
+  def random_quests
+    print Quest.order("RANDOM()").limit(1)
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_quest

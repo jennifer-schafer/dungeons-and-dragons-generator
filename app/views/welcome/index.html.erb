@@ -1,32 +1,37 @@
 <h1>Welcome to Dungeons and Dragons Generator</h1>
-
-<p>Generator (to randomly generate results)
 <br>
 <br>
-Dungeons
+<p>Hello, this is a Dungeon Master tool for randomly generating different events, npcs, and items
+  that your players might encounter along their journey.</p>
+<p> Keep in mind that these are based on fifth edition game play.</p>
+<p>
 <br>
-People
+<%= button_tag "Generate Random Person"%>
 <br>
-Encounters
 <br>
-Quests
+<%= button_tag "Generate Random Dungeon Monsters"%>
 <br>
-Carousing
 <br>
-Special Items
+<%= button_tag "Generate Random Encounters"%>
 <br>
-Craft Lists
+<br>
+<%= button_tag "Generate Random Quests"%>
+<br>
+<br>
+<%= button_tag "Generate Random Crafting Lists"%>
+<br>
+<br>
+<%= button_tag "Generate Random Special Items and Weapons"%>
+<br>
+<br>
+<%= button_tag "Generate Random Carousing Results"%>
+<br>
 <br>
 <br>
 <p>Lists (to Add, Edit, and Destroy)</p>
 <%= link_to 'Dungeons', dungeons_path %>
-<br>
 <%= link_to 'People', people_path %>
-<br>
 <%= link_to 'Encounters', encounters_path %>
-<br>
 <%= link_to 'Quests', quests_path %>
-<br>
 <%= link_to 'Carousings', carousings_path %>
-<br>
-<p>Find me in app/views/welcome/index.html.erb</p>
+

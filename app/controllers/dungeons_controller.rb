@@ -61,6 +61,12 @@ class DungeonsController < ApplicationController
     end
   end
 
+  def random_dungeons
+    print Dungeon.order("RANDOM()").limit(1)
+  end
+
+
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_dungeon
